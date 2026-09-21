@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #07080a;
+  --bg-mid: #101418;
+  --bg-soft: #161c22;
+  --fg: #e8e4db;
+  --fg-muted: #a39e93;
+  --line: rgba(232, 228, 219, 0.12);
+  --herbal: #6f8f72;
+  --kitchen: #c4924a;
+  --lunar: #b8c0c8;
+  --divination: #8b6fad;
+  --ritual: #c9a227;
+  --talisman: #8f3d3d;
+  --grimoire: #cbb99a;
+  --green: #3f6b4e;
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+@theme inline {
+  --color-background: var(--bg-deep);
+  --color-foreground: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-line: var(--line);
+  --color-herbal: var(--herbal);
+  --color-kitchen: var(--kitchen);
+  --color-lunar: var(--lunar);
+  --color-divination: var(--divination);
+  --color-ritual: var(--ritual);
+  --color-talisman: var(--talisman);
+  --color-grimoire: var(--grimoire);
+  --color-green-witch: var(--green);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--fg);
+  font-family: var(--font-body), Georgia, serif;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(111, 143, 114, 0.14), transparent 55%),
+    radial-gradient(900px 500px at 100% 20%, rgba(139, 111, 173, 0.1), transparent 50%),
+    radial-gradient(800px 500px at 0% 80%, rgba(201, 162, 39, 0.08), transparent 45%),
+    linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-deep) 45%, #050607 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.045;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.page-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.accent-herbal {
+  --accent: var(--herbal);
+  color: var(--herbal);
+}
+
+.accent-kitchen {
+  --accent: var(--kitchen);
+  color: var(--kitchen);
+}
+
+.accent-lunar {
+  --accent: var(--lunar);
+  color: var(--lunar);
+}
+
+.accent-divination {
+  --accent: var(--divination);
+  color: var(--divination);
+}
+
+.accent-ritual {
+  --accent: var(--ritual);
+  color: var(--ritual);
+}
+
+.accent-talisman {
+  --accent: var(--talisman);
+  color: var(--talisman);
+}
+
+.accent-grimoire {
+  --accent: var(--grimoire);
+  color: var(--grimoire);
+}
+
+.accent-green {
+  --accent: var(--green);
+  color: var(--green);
+}
+
+.touch-target {
+  min-height: 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
