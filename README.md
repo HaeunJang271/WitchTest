@@ -1,4 +1,4 @@
-# WitchTest (NOCTORA)
+# WitchTest (CYNTHIA)
 
 모바일 우선 Witchcraft 성향 테스트 웹앱입니다.
 

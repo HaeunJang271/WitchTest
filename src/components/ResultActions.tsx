@@ -58,7 +58,7 @@ export function ResultActions({
         backgroundColor: "#0d1116",
       });
       const link = document.createElement("a");
-      link.download = `noctora-${primary.englishName.toLowerCase()}.png`;
+      link.download = `cynthia-${primary.englishName.toLowerCase()}.png`;
       link.href = dataUrl;
       link.click();
       setStatus("결과 카드를 저장했어요.");

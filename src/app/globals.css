@@ -48,7 +48,10 @@ body {
 body {
   margin: 0;
   color: var(--fg);
-  font-family: var(--font-body), Georgia, serif;
+  font-family: var(--font-body), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.65;
   background:
     radial-gradient(1200px 600px at 50% -10%, rgba(111, 143, 114, 0.14), transparent 55%),
     radial-gradient(900px 500px at 100% 20%, rgba(139, 111, 173, 0.1), transparent 50%),

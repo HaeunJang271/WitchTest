@@ -22,7 +22,7 @@ export const WITCH_TYPES: readonly WitchType[] = [
 ] as const;
 
 /** Brand display name used in UI and share copy. */
-export const BRAND_NAME = "NOCTORA";
+export const BRAND_NAME = "CYNTHIA";
 
 /** Product / project name. */
 export const PRODUCT_NAME = "WitchTest";

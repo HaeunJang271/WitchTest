@@ -23,7 +23,7 @@ export default function HomePage() {
     <main className="flex min-h-dvh flex-col">
       <PageContainer className="justify-center text-center">
         <motion.p
-          className="font-[family-name:var(--font-display)] text-4xl tracking-[0.18em] text-[var(--fg)] sm:text-5xl"
+          className="font-[family-name:var(--font-display)] text-4xl tracking-[0.08em] text-[var(--fg)] sm:text-5xl"
           initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...fade, delay: 0.05 }}

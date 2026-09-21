@@ -1,32 +1,32 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { Fraunces, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
-const display = Cormorant_Garamond({
+const display = Fraunces({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const body = Outfit({
+const body = Noto_Sans_KR({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "당신의 마법 성향은? | NOCTORA",
+  title: "당신의 마법 성향은? | CYNTHIA",
   description: "16개의 질문으로 알아보는 나만의 Witchcraft Type.",
   openGraph: {
-    title: "당신의 마법 성향은? | NOCTORA",
+    title: "당신의 마법 성향은? | CYNTHIA",
     description: "16개의 질문으로 알아보는 나만의 Witchcraft Type.",
     type: "website",
     locale: "ko_KR",
-    siteName: "NOCTORA",
+    siteName: "CYNTHIA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "당신의 마법 성향은? | NOCTORA",
+    title: "당신의 마법 성향은? | CYNTHIA",
     description: "16개의 질문으로 알아보는 나만의 Witchcraft Type.",
   },
 };

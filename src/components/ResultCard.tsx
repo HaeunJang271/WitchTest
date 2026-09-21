@@ -31,7 +31,7 @@ export const ResultCard = forwardRef<HTMLDivElement, ResultCardProps>(
         className={`overflow-hidden rounded-3xl border border-white/10 bg-[#0d1116] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)] ${primary.accentClass}`}
       >
         <p className="text-[10px] tracking-[0.25em] text-[var(--fg-muted)]">
-          NOCTORA · MAGIC TYPE
+          CYNTHIA · MAGIC TYPE
         </p>
 
         <motion.div
