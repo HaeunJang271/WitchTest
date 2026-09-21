@@ -6,7 +6,7 @@ import type { WitchType, WitchTypeMeta } from "@/types/witch";
 export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   HERBAL: {
     id: "HERBAL",
-    name: "허브 마법사",
+    name: "Herbal Witch",
     englishName: "HERBAL",
     icon: "🌿",
     description:
@@ -21,7 +21,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   KITCHEN: {
     id: "KITCHEN",
-    name: "쿠킹 마녀",
+    name: "Kitchen Witch",
     englishName: "KITCHEN",
     icon: "🍲",
     description:
@@ -36,7 +36,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   LUNAR: {
     id: "LUNAR",
-    name: "문셀 마녀",
+    name: "Lunar Witch",
     englishName: "LUNAR",
     icon: "🌙",
     description:
@@ -51,7 +51,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   DIVINATION: {
     id: "DIVINATION",
-    name: "점술가",
+    name: "Divination Witch",
     englishName: "DIVINATION",
     icon: "🔮",
     description:
@@ -66,7 +66,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   RITUAL: {
     id: "RITUAL",
-    name: "의식 마녀",
+    name: "Ritual Witch",
     englishName: "RITUAL",
     icon: "🕯️",
     description:
@@ -81,7 +81,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   TALISMAN: {
     id: "TALISMAN",
-    name: "부적술사",
+    name: "Talisman Witch",
     englishName: "TALISMAN",
     icon: "🧿",
     description:
@@ -96,7 +96,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   GRIMOIRE: {
     id: "GRIMOIRE",
-    name: "그리모어 마녀",
+    name: "Grimoire Witch",
     englishName: "GRIMOIRE",
     icon: "📖",
     description:
@@ -111,7 +111,7 @@ export const witchTypeMeta: Record<WitchType, WitchTypeMeta> = {
   },
   GREEN: {
     id: "GREEN",
-    name: "숲의 마녀",
+    name: "Green Witch",
     englishName: "GREEN",
     icon: "🌲",
     description:
