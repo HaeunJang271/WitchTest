@@ -59,7 +59,7 @@ export default function HomePage() {
         </motion.p>
 
         <motion.p
-          className="mt-6 text-[11px] tracking-[0.16em] text-[var(--ritual)]"
+          className="mt-6 text-[11px] tracking-[0.16em] text-[var(--candle)]"
           initial={prefersReducedMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ...fade, delay: 0.36 }}
@@ -76,7 +76,7 @@ export default function HomePage() {
           <Link
             href="/test"
             onClick={() => clearProgress()}
-            className="touch-target inline-flex min-w-[220px] items-center justify-center rounded-full bg-[var(--ritual)]/90 px-6 text-base font-medium text-[#1a1408] transition hover:bg-[var(--ritual)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ritual)]"
+            className="touch-target inline-flex min-w-[220px] items-center justify-center rounded-full bg-[var(--candle)]/90 px-6 text-base font-medium text-[#1a1408] transition hover:bg-[var(--candle)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--candle)]"
             aria-label="테스트 시작"
           >
             ✦ 테스트 시작

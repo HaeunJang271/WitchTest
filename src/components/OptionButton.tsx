@@ -40,9 +40,9 @@ export function OptionButton({
       }
       whileTap={prefersReducedMotion || disabled ? undefined : { scale: 0.98 }}
       transition={fade}
-      className={`touch-target flex w-full items-start gap-3 rounded-2xl border px-4 py-3.5 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ritual)] ${
+      className={`touch-target flex w-full items-start gap-3 rounded-2xl border px-4 py-3.5 text-left transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--candle)] ${
         selected
-          ? "border-[var(--ritual)] bg-white/[0.08] ring-1 ring-[var(--ritual)]/50"
+          ? "border-[var(--candle)] bg-white/[0.08] ring-1 ring-[var(--candle)]/50"
           : "border-white/10 bg-white/[0.03] hover:border-white/20 hover:bg-white/[0.05]"
       } ${disabled ? "cursor-wait opacity-80" : ""}`}
     >

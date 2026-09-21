@@ -7,18 +7,26 @@ export const TOTAL_QUESTIONS = 16;
 export const MIN_TOUCH_TARGET_PX = 48;
 
 /** localStorage key for quiz progress. */
-export const STORAGE_KEY = "witchtest-progress-v1";
+export const STORAGE_KEY = "witchtest-progress-v2";
 
 /** Canonical type order used for stable tie-breaking. */
 export const WITCH_TYPES: readonly WitchType[] = [
-  "HERBAL",
-  "KITCHEN",
-  "LUNAR",
-  "DIVINATION",
-  "RITUAL",
-  "TALISMAN",
-  "GRIMOIRE",
   "GREEN",
+  "KITCHEN",
+  "COTTAGE",
+  "SEA",
+  "LUNAR",
+  "SOLAR",
+  "CRYSTAL",
+  "CANDLE",
+  "DIVINATION",
+  "PROTECTION",
+  "FAERY",
+  "SPIRIT",
+  "ANIMAL",
+  "SHADOW",
+  "DEITY",
+  "CHAOS",
 ] as const;
 
 /** Brand display name used in UI and share copy. */
@@ -38,4 +46,4 @@ export const TEST_SUBTITLE =
   "16개의 질문으로 알아보는 나만의 Witchcraft Type";
 
 /** Landing meta line. */
-export const TEST_META_LINE = "16 QUESTIONS · 8 TYPES · 약 3분";
+export const TEST_META_LINE = "16 QUESTIONS · 16 TYPES · 약 3분";

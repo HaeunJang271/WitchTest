@@ -7,14 +7,22 @@
   --fg: #e8e4db;
   --fg-muted: #a39e93;
   --line: rgba(232, 228, 219, 0.12);
-  --herbal: #6f8f72;
+  --green: #6f8f72;
   --kitchen: #c4924a;
+  --cottage: #b89a78;
+  --sea: #5f8fa8;
   --lunar: #b8c0c8;
+  --solar: #d4a84b;
+  --crystal: #8aa0c8;
+  --candle: #c9a227;
   --divination: #8b6fad;
-  --ritual: #c9a227;
-  --talisman: #8f3d3d;
-  --grimoire: #cbb99a;
-  --green: #3f6b4e;
+  --protection: #8f3d3d;
+  --faery: #9a8bb8;
+  --spirit: #9a9aaa;
+  --animal: #8a6f55;
+  --shadow: #6a6570;
+  --deity: #c4a574;
+  --chaos: #7a6b9a;
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 }
@@ -24,14 +32,6 @@
   --color-foreground: var(--fg);
   --color-muted: var(--fg-muted);
   --color-line: var(--line);
-  --color-herbal: var(--herbal);
-  --color-kitchen: var(--kitchen);
-  --color-lunar: var(--lunar);
-  --color-divination: var(--divination);
-  --color-ritual: var(--ritual);
-  --color-talisman: var(--talisman);
-  --color-grimoire: var(--grimoire);
-  --color-green-witch: var(--green);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
 }
@@ -75,45 +75,22 @@ body::before {
   z-index: 1;
 }
 
-.accent-herbal {
-  --accent: var(--herbal);
-  color: var(--herbal);
-}
-
-.accent-kitchen {
-  --accent: var(--kitchen);
-  color: var(--kitchen);
-}
-
-.accent-lunar {
-  --accent: var(--lunar);
-  color: var(--lunar);
-}
-
-.accent-divination {
-  --accent: var(--divination);
-  color: var(--divination);
-}
-
-.accent-ritual {
-  --accent: var(--ritual);
-  color: var(--ritual);
-}
-
-.accent-talisman {
-  --accent: var(--talisman);
-  color: var(--talisman);
-}
-
-.accent-grimoire {
-  --accent: var(--grimoire);
-  color: var(--grimoire);
-}
-
-.accent-green {
-  --accent: var(--green);
-  color: var(--green);
-}
+.accent-green { --accent: var(--green); color: var(--green); }
+.accent-kitchen { --accent: var(--kitchen); color: var(--kitchen); }
+.accent-cottage { --accent: var(--cottage); color: var(--cottage); }
+.accent-sea { --accent: var(--sea); color: var(--sea); }
+.accent-lunar { --accent: var(--lunar); color: var(--lunar); }
+.accent-solar { --accent: var(--solar); color: var(--solar); }
+.accent-crystal { --accent: var(--crystal); color: var(--crystal); }
+.accent-candle { --accent: var(--candle); color: var(--candle); }
+.accent-divination { --accent: var(--divination); color: var(--divination); }
+.accent-protection { --accent: var(--protection); color: var(--protection); }
+.accent-faery { --accent: var(--faery); color: var(--faery); }
+.accent-spirit { --accent: var(--spirit); color: var(--spirit); }
+.accent-animal { --accent: var(--animal); color: var(--animal); }
+.accent-shadow { --accent: var(--shadow); color: var(--shadow); }
+.accent-deity { --accent: var(--deity); color: var(--deity); }
+.accent-chaos { --accent: var(--chaos); color: var(--chaos); }
 
 .touch-target {
   min-height: 48px;

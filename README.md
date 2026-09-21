@@ -32,4 +32,4 @@ npm run dev
 
 - `/` — 시작 화면
 - `/test` — 16문항 테스트 (+ 동점 tie-breaker)
-- `/result?primary=HERBAL&secondary=LUNAR` — 결과
+- `/result?primary=GREEN&secondary=LUNAR` — 결과

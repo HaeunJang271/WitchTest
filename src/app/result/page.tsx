@@ -44,7 +44,7 @@ function ResultContent() {
         </p>
         <Link
           href="/"
-          className="touch-target inline-flex items-center justify-center rounded-full bg-[var(--ritual)]/90 px-5 text-sm text-[#1a1408]"
+          className="touch-target inline-flex items-center justify-center rounded-full bg-[var(--candle)]/90 px-5 text-sm text-[#1a1408]"
         >
           처음으로
         </Link>

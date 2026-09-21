@@ -77,7 +77,7 @@ export function ResultActions({
           type="button"
           onClick={() => void handleShare()}
           disabled={busy}
-          className="touch-target inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 text-sm text-[var(--fg)] transition hover:bg-white/[0.08] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ritual)] disabled:opacity-60"
+          className="touch-target inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 text-sm text-[var(--fg)] transition hover:bg-white/[0.08] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--candle)] disabled:opacity-60"
           aria-label="결과 공유하기"
         >
           <Share2 className="h-4 w-4" aria-hidden="true" />
@@ -87,7 +87,7 @@ export function ResultActions({
           type="button"
           onClick={() => void handleSave()}
           disabled={busy}
-          className="touch-target inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 text-sm text-[var(--fg)] transition hover:bg-white/[0.08] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ritual)] disabled:opacity-60"
+          className="touch-target inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 text-sm text-[var(--fg)] transition hover:bg-white/[0.08] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--candle)] disabled:opacity-60"
           aria-label="결과 카드 PNG로 저장"
         >
           <Download className="h-4 w-4" aria-hidden="true" />
@@ -98,7 +98,7 @@ export function ResultActions({
       <button
         type="button"
         onClick={onRetake}
-        className="touch-target inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--ritual)]/90 px-4 text-sm font-medium text-[#1a1408] transition hover:bg-[var(--ritual)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ritual)]"
+        className="touch-target inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--candle)]/90 px-4 text-sm font-medium text-[#1a1408] transition hover:bg-[var(--candle)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--candle)]"
         aria-label="다시 테스트하기"
       >
         <RotateCcw className="h-4 w-4" aria-hidden="true" />

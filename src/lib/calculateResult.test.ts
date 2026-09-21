@@ -18,65 +18,63 @@ describe("calculateResult", () => {
     expect(result.primary).toBeNull();
     expect(result.secondary).toBeNull();
     expect(result.needsTieBreaker).toBe(false);
-    expect(result.scores.HERBAL).toBe(0);
+    expect(result.scores.GREEN).toBe(0);
   });
 
   it("picks the highest score as primary", () => {
     const result = calculateResult(
       answersOf([
-        "HERBAL",
-        "HERBAL",
-        "HERBAL",
+        "GREEN",
+        "GREEN",
+        "GREEN",
         "KITCHEN",
         "KITCHEN",
         "LUNAR",
       ]),
     );
-    expect(result.primary).toBe("HERBAL");
+    expect(result.primary).toBe("GREEN");
     expect(result.secondary).toBe("KITCHEN");
     expect(result.needsTieBreaker).toBe(false);
   });
 
   it("assigns two-way first-place ties to primary and secondary", () => {
     const result = calculateResult(
-      answersOf(["HERBAL", "KITCHEN", "HERBAL", "KITCHEN"]),
+      answersOf(["GREEN", "KITCHEN", "GREEN", "KITCHEN"]),
     );
-    expect(result.tiedForFirst).toEqual(["HERBAL", "KITCHEN"]);
-    expect(result.primary).toBe("HERBAL");
+    expect(result.tiedForFirst).toEqual(["GREEN", "KITCHEN"]);
+    expect(result.primary).toBe("GREEN");
     expect(result.secondary).toBe("KITCHEN");
     expect(result.needsTieBreaker).toBe(false);
   });
 
   it("flags three-or-more first-place ties for a tie-breaker", () => {
     const result = calculateResult(
-      answersOf(["HERBAL", "KITCHEN", "LUNAR"]),
+      answersOf(["GREEN", "KITCHEN", "LUNAR"]),
     );
     expect(result.needsTieBreaker).toBe(true);
     expect(result.primary).toBeNull();
     expect(result.secondary).toBeNull();
-    expect(result.tiedForFirst).toEqual(["HERBAL", "KITCHEN", "LUNAR"]);
+    expect(result.tiedForFirst).toEqual(["GREEN", "KITCHEN", "LUNAR"]);
   });
 
   it("uses canonical order when scores are equal for ranking", () => {
-    const result = calculateResult(
-      answersOf(["GREEN", "HERBAL"]),
-    );
-    expect(result.primary).toBe("HERBAL");
-    expect(result.secondary).toBe("GREEN");
+    const result = calculateResult(answersOf(["SEA", "GREEN"]));
+    expect(result.primary).toBe("GREEN");
+    expect(result.secondary).toBe("SEA");
   });
 });
 
 describe("resolveTieBreaker", () => {
   it("sets chosen type as primary and next tied as secondary", () => {
-    const answers = answersOf(["HERBAL", "KITCHEN", "LUNAR"]);
+    const answers = answersOf(["GREEN", "KITCHEN", "LUNAR"]);
     const resolved = resolveTieBreaker(answers, "LUNAR");
     expect(resolved.needsTieBreaker).toBe(false);
     expect(resolved.primary).toBe("LUNAR");
-    expect(resolved.secondary).toBe("HERBAL");
+    expect(resolved.secondary).toBe("GREEN");
   });
 
   it("throws when chosen type is not tied", () => {
-    const answers = answersOf(["HERBAL", "KITCHEN", "LUNAR"]);
-    expect(() => resolveTieBreaker(answers, "GREEN")).toThrow();
+    const answers = answersOf(["GREEN", "KITCHEN", "LUNAR"]);
+    expect(() => resolveTieBreaker(answers, "CHAOS")).toThrow();
   });
 });

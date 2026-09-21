@@ -2,14 +2,22 @@
  * Witchcraft Type identifiers used across the app.
  */
 export type WitchType =
-  | "HERBAL"
+  | "GREEN"
   | "KITCHEN"
+  | "COTTAGE"
+  | "SEA"
   | "LUNAR"
+  | "SOLAR"
+  | "CRYSTAL"
+  | "CANDLE"
   | "DIVINATION"
-  | "RITUAL"
-  | "TALISMAN"
-  | "GRIMOIRE"
-  | "GREEN";
+  | "PROTECTION"
+  | "FAERY"
+  | "SPIRIT"
+  | "ANIMAL"
+  | "SHADOW"
+  | "DEITY"
+  | "CHAOS";
 
 /**
  * A single selectable answer mapped to a WitchType.

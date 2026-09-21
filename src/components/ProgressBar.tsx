@@ -21,7 +21,7 @@ export function ProgressBar({
         aria-label={`진행률 ${percent}퍼센트`}
       >
         <div
-          className="h-full rounded-full bg-[var(--ritual)] transition-[width] duration-300 ease-out"
+          className="h-full rounded-full bg-[var(--candle)] transition-[width] duration-300 ease-out"
           style={{ width: `${percent}%` }}
         />
       </div>

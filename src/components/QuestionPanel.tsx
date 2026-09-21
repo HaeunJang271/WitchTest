@@ -41,7 +41,7 @@ export function QuestionPanel({
             <button
               type="button"
               onClick={onBack}
-              className="touch-target rounded-full px-3 text-sm text-[var(--fg-muted)] underline-offset-4 hover:text-[var(--fg)] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ritual)]"
+              className="touch-target rounded-full px-3 text-sm text-[var(--fg-muted)] underline-offset-4 hover:text-[var(--fg)] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--candle)]"
               aria-label="이전 질문으로 돌아가기"
             >
               ← 이전
